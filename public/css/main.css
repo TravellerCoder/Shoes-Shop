@@ -2,6 +2,7 @@
 
 :root {
     --clr-main:#4b33a8;
+    --clr-main-dark: #2b06af;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
@@ -26,4 +27,89 @@ ul {
 
 a {
     text-decoration: none; 
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--clr-main);
+}
+
+aside {
+    padding: 2rem;
+    color:var(--clr-white);
+    position:sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.text-footer {
+    color:var(--clr-main-dark);
+    font-size: 1rem;
+}
+
+main {
+    background-color: var(--clr-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.titulo-principal {
+    color:var(--clr-main);
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalle {
+    background-color: var(--clr-main);
+    color :var(--clr-white);    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    gap: 0.25rem;
+}
+
+.producto-titulo {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.producto-agregar {
+    border: 0;
+    background-color: var(--clr-white);
+    color:var(--clr-main);
+    padding: .25rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-white);
+    transition: background-color .3s color .3s;
+}
+
+.producto-agregar:hover {
+    background-color: var(--clr-main-dark);
+    color:var(--clr-white);
 }

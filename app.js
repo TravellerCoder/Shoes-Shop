@@ -18,3 +18,7 @@ app.listen(port, (error) => {
 app.get('/', function(req,res){
     res.sendFile(path.resolve(__dirname, './src/index.html'))
 });
+
+app.get('/carrito', function(req,res){
+    res.sendFile(path.resolve(__dirname, './src/carrito.html'))
+});
