@@ -16,9 +16,9 @@
             </header>
             <nav>
                 <ul class="menu">
-                    <li><button class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los Productos</button></li>
-                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Zapatillas</button></li>
-                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Botines</button></li>
+                    <li><button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los Productos</button></li>
+                    <li><button id="zapatillas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Zapatillas</button></li>
+                    <li><button id="botines" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Botines</button></li>
                     <li><a class="boton-menu boton-carrito" href="./carrito"><i class="bi bi-cart-check"></i> Carrito<span class="numero"> 0</span></a></li>
                 </ul>
             </nav>
@@ -27,44 +27,12 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class="contenedor-productos">
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/Botines/Borussia.webp" alt="">
-                    <div class="producto-detalle">
-                        <h3 class="prodcuto-titulo">Botin 01</h3>
-                        <p class="producto-precio">precio</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/Botines/Copa 19.3.webp" alt="">
-                    <div class="producto-detalle">
-                        <h3 class="prodcuto-titulo">Botin 02</h3>
-                        <p class="producto-precio">precio</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/Botines/FuturePlay.webp" alt="">
-                    <div class="producto-detalle">
-                        <h3 class="prodcuto-titulo">Botin 03</h3>
-                        <p class="producto-precio">precio</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-                
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/Botines/Legend8.webp" alt="">
-                    <div class="producto-detalle">
-                        <h3 class="prodcuto-titulo">Botin 04</h3>
-                        <p class="producto-precio">precio</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se rellena con JS-->
             </div>
         </main>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

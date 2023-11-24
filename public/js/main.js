@@ -1,17 +1,19 @@
 const productos = [
     {
         id: 'botin01',
-        titulo: 'Puma Borusia',
-        imagen: './images/botines/Borusia.webp',
+        marca: 'Puma ',
+        modelo:'Borusia',
+        imagen: './images/botines/Borussia.webp',
         categoria: {
             id: 'botines',
             nombre: 'Botines'
         },
-        precio: 50000, 
+        precio: '50000', 
     },
     {
         id: 'botin02',
-        titulo: 'Puma Future Play',
+        marca: 'Puma ',
+        modelo:'Future Play',
         imagen: './images/botines/FuturePlay.webp',
         categoria: {
             id: 'botines',
@@ -21,8 +23,9 @@ const productos = [
     },
     {
         id: 'botin03',
-        titulo: 'Puma Future Z',
-        imagen: './images/botines/FutureZ.webp',
+        marca: 'Puma ',
+        modelo:'Future Z',
+        imagen: './images/botines/FutureZ4.3.webp',
         categoria: {
             id: 'botines',
             nombre: 'Botines'
@@ -31,7 +34,8 @@ const productos = [
     },
     {
         id: 'botin04',
-        titulo: 'Puma UltraMatch',
+        marca: 'Puma ',
+        modelo:'UltraMatch',
         imagen: './images/botines/UltraMatch.webp',
         categoria: {
             id: 'botines',
@@ -41,7 +45,8 @@ const productos = [
     },
     {
         id: 'botin05',
-        titulo: 'Adidas Copa',
+        marca: 'Adidas ',
+        modelo:'Copa',
         imagen: './images/botines/Copa 19.3.webp',
         categoria: {
             id: 'botines',
@@ -51,7 +56,8 @@ const productos = [
     },
     {
         id: 'botin06',
-        titulo: ' Adidas Predator Accuracy',
+        marca: ' Adidas',
+        modelo:' Predator Acc',
         imagen: './images/botines/Predator Accuracy.jpg',
         categoria: {
             id: 'botines',
@@ -61,7 +67,8 @@ const productos = [
     },
     {
         id: 'botin07',
-        titulo: 'Adidas Predato Mutator',
+        marca: 'Adidas ',
+        modelo:'Predato Mutator',
         imagen: './images/botines/Predator Mutator.jpeg',
         categoria: {
             id: 'botines',
@@ -71,8 +78,9 @@ const productos = [
     },
     {
         id: 'botin08',
-        titulo: 'Adidas X SpeedPortal',
-        imagen: './images/botines/X SpeedPortal.jpg',
+        marca: 'Adidas ',
+        modelo:'X SpeedPortal',
+        imagen: './images/botines/X SpeedPortal.jpeg',
         categoria: {
             id: 'botines',
             nombre: 'Botines'
@@ -81,7 +89,8 @@ const productos = [
     },
     {
         id: 'botin09',
-        titulo: 'Nike Legend 8',
+        marca: 'Nike ',
+        modelo:'Legend 8',
         imagen: './images/botines/Legend8.webp',
         categoria: {
             id: 'botines',
@@ -91,7 +100,8 @@ const productos = [
     },
     {
         id: 'botin10',
-        titulo: 'Nike Mercurial Superfly',
+        marca: 'Nike',
+        modelo:' Mercurial Super',
         imagen: './images/botines/Mercurial Superfly.jpeg',
         categoria: {
             id: 'botines',
@@ -101,7 +111,8 @@ const productos = [
     },
     {
         id: 'botin11',
-        titulo: 'Nike Phantom Vision',
+        marca: 'Nike ',
+        modelo:'Phantom Vision',
         imagen: './images/botines/Phantom Vision Pro.jpeg',
         categoria: {
             id: 'botines',
@@ -111,7 +122,8 @@ const productos = [
     },
     {
         id: 'botin12',
-        titulo: 'Nike Zoom Vapor',
+        marca: 'Nike ',
+        modelo:'Zoom Vapor',
         imagen: './images/botines/Zoom Vapor.jpg',
         categoria: {
             id: 'botines',
@@ -121,7 +133,8 @@ const productos = [
     },
     {
         id: 'zapatilla01',
-        titulo: 'Nike Air Max 90',
+        marca: 'Nike ',
+        modelo:'Air Max 90',
         imagen: './images/zapatillas/Air Max 90 Futura.webp',
         categoria: {
             id: 'zapatillas',
@@ -131,8 +144,9 @@ const productos = [
     },
     {
         id: 'zapatilla02',
-        titulo: 'Nike Air Max 97',
-        imagen: './images/zapatillas/Air Max 97 OG.jpeg',
+        marca: 'Nike ',
+        modelo:'Air Max 97',
+        imagen: './images/zapatillas/Air Max 97 OG.webp',
         categoria: {
             id: 'zapatillas',
             nombre: 'Zapatillas'
@@ -141,8 +155,9 @@ const productos = [
     },
     {
         id: 'zapatilla03',
-        titulo: 'Nike Renew Run',
-        imagen: './images/zapatillas/Renew Run3.jpeg',
+        marca: 'Nike ',
+        modelo:'Renew Run',
+        imagen: './images/zapatillas/Renew Run 3.jpg',
         categoria: {
             id: 'zapatillas',
             nombre: 'Zapatillas'
@@ -151,7 +166,8 @@ const productos = [
     },
     {
         id: 'zapatilla04',
-        titulo: 'Nike Air Force 1',
+        marca: 'Nike ',
+        modelo:'Air Force 1',
         imagen: './images/zapatillas/Air Force 1 LE.jpg',
         categoria: {
             id: 'zapatillas',
@@ -161,7 +177,8 @@ const productos = [
     },
     {
         id: 'zapatiila05',
-        titulo: 'Adidas Force Bounce',
+        marca: 'Adidas ',
+        modelo:'Force Bounce',
         imagen: './images/zapatillas/ForceBounce 2.0.webp',
         categoria: {
             id: 'zapatillas',
@@ -171,7 +188,8 @@ const productos = [
     },
     {
         id: 'zapatilla06',
-        titulo: 'Adidas Forum Mid', 
+        marca: 'Adidas ', 
+        modelo:'Forum Mid',
         imagen: './images/zapatillas/Forum Mid.jpg',
         categoria: {
             id: 'zapatillas',
@@ -181,7 +199,8 @@ const productos = [
     },
     {
         id: 'zapatilla07',
-        titulo: 'Adidas HVC',
+        marca: 'Adidas',
+        modelo:' HVC',
         imagen: './images/zapatillas/HVC.jpg',
         categoria: {
             id: 'zapatillas',
@@ -191,7 +210,8 @@ const productos = [
     },
     {
         id: 'zapatilla08',
-        titulo: 'Adidas Response Super',
+        marca: 'Adidas ',
+        modelo:'Response Super',
         imagen: './images/zapatillas/Response-Runner.webp',
         categoria: {
             id: 'zapatillas',
@@ -201,7 +221,8 @@ const productos = [
     },
     {
         id: 'zapatiila09',
-        titulo: 'Puma  R22',
+        marca: 'Puma  ',
+        modelo:'R22',
         imagen: './images/zapatillas/R22.jpeg',
         categoria: {
             id: 'zapatillas',
@@ -211,8 +232,9 @@ const productos = [
     },
     {
         id: 'zapatilla10',
-        titulo: 'Puma Rataliate',
-        imagen: './images/zapatillas/Rataliate2.jpeg',
+        marca: 'Puma ',
+        modelo:'Retaliate',
+        imagen: './images/zapatillas/Retaliate 2.jpeg',
         categoria: {
             id: 'zapatillas',
             nombre: 'Zapatillas'
@@ -221,7 +243,8 @@ const productos = [
     },
     {
         id: 'zapatilla11',
-        titulo: 'Puma Suede Classic',
+        marca: 'Puma ',
+        modelo:'Suede Classic',
         imagen: './images/zapatillas/Suede Classic.webp',
         categoria: {
             id: 'zapatillas',
@@ -231,12 +254,62 @@ const productos = [
     },
     {
         id: 'zapatilla12',
-        titulo: 'Puma Cali Dream',
-        imagen: './images/zapatillas/Cali Dream It.jpeg',
+        marca: 'Puma ',
+        modelo:'Cali Dream',
+        imagen: './images/zapatillas/Cali Dream lt.jpeg',
         categoria: {
             id: 'zapatillas',
             nombre: 'Zapatillas'
         },
         precio: '125000', 
     }
-]
+];
+
+const contenedorProductos = document.querySelector('#contenedor-productos');
+const botonesCategorias = document.querySelectorAll('.boton-categoria');
+const tituloPrincipal = document.querySelector('#titulo-principal');
+
+function cargarProductos(productosElegidos) {
+
+    contenedorProductos.innerHTML = '';
+
+    productosElegidos.forEach(producto => {
+
+        const div = document.createElement('div');
+        div.classList.add('producto');
+        div.innerHTML = `
+        <img class="producto-imagen" src="${producto.imagen}" alt="${producto.modelo}">
+        <div class="producto-detalle">
+            <h3 class="producto-titulo">${producto.marca}</h3>
+            <p class="producto-modelo">${producto.modelo}</p>
+            <p class="producto-precio">${producto.precio}</p>
+            <button class="producto-agregar" id='${producto.id}'>Agregar al carrito</button>
+        </div>
+        `;
+        contenedorProductos.append(div);
+    });
+}
+
+cargarProductos(productos);
+
+botonesCategorias.forEach(boton => {
+    boton.addEventListener('click', (e) => {
+
+        botonesCategorias.forEach(boton => boton.classList.remove('active'));
+
+        e.currentTarget.classList.add('active');
+
+        if (e.currentTarget.id != 'todos') {
+            const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
+            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
+            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+        cargarProductos(productosBoton);
+        } else {
+            tituloPrincipal.innerText = 'Todos los productos';
+            cargarProductos(productos);
+        }
+
+        
+})
+})
+

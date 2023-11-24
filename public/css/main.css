@@ -157,6 +157,7 @@ main {
     color :var(--clr-white);    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     padding: 1rem;
     border-radius: 1rem;
     margin-top: -2rem;
@@ -164,9 +165,15 @@ main {
     gap: 0.25rem;
 }
 
-.producto-titulo {
+.producto-marca {
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.producto-modelo {
+    font-size: 1rem;
+    font-weight: 700;
+
 }
 
 .producto-agregar {
