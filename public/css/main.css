@@ -66,6 +66,13 @@ aside {
     transform: rotate(90deg); ;
 }
 
+.numero {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: 0 .15rem;
+    border-radius: .25rem;
+}
+
 .boton-menu {
     background-color: transparent;
     border:0; 
@@ -267,4 +274,8 @@ main {
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+.disable {
+    display: none;
 }
