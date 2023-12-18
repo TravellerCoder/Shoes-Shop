@@ -284,8 +284,8 @@ function cargarProductos(productosElegidos) {
         <div class="producto-detalle">
             <h3 class="producto-titulo">${producto.marca}</h3>
             <p class="producto-modelo">${producto.modelo}</p>
-            <p class="producto-precio">${producto.precio}</p>
-            <button class="producto-agregar" id='${producto.id}'>Agregar al carrito</button>
+            <p class="producto-precio">${'$' + producto.precio}</p>
+            <button class="producto-agregar" id='${producto.id}'>Comprar</button>
         </div>
         `;
         contenedorProductos.append(div);
@@ -321,8 +321,18 @@ function actualizarBotonesAgregar() {
         boton.addEventListener('click', agregarAlCarrito);
     })  
 }
+let productosEnCarrito;
 
-const productosEnCarrito = [];
+let productosEnCarritoLocalStorage = localStorage.getItem('productos-en-carrito')
+
+
+if(productosEnCarritoLocalStorage){
+    productosEnCarrito = JSON.parse(productosEnCarritoLocalStorage);
+    actualizarNumeroCarrito();
+} else {
+    productosEnCarrito = [];
+}
+
 
 function agregarAlCarrito(e) {
     const idBoton =e.currentTarget.id;
@@ -336,12 +346,12 @@ function agregarAlCarrito(e) {
         productosEnCarrito.push(productoAgregado);  
     } 
     actualizarNumeroCarrito();
-
-    localStorage.setItem('productosEnCarrito', JSON.stringify(productosEnCarrito));
-
+    
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+    console.log(productosEnCarrito);
 }
 function actualizarNumeroCarrito() {
     let nuevoNumero = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-    console.log(nuevoNumero);
+    
     numeroCarrito.innerText = nuevoNumero;
 }
