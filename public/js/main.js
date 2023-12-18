@@ -77,6 +77,28 @@ if(productosEnCarritoLocalStorage){
 
 
 function agregarAlCarrito(e) {
+    Toastify({
+        text: "Producto Agregado",
+        duration: 5000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "linear-gradient(to right, #4b33a8, #2b06af)",
+            borderRadius: "1.5rem",
+            fontSize: ".75rem",
+            textTransform: "uppercase"
+        },
+        offset: {
+            x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        },
+        
+        onClick: function(){} // Callback after click
+    }).showToast();
     const idBoton =e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBoton);
     
