@@ -12,7 +12,7 @@
     },
     {
         "id": "botin02",
-        "marca": "'Puma",
+        "marca":"Puma",
         "modelo": "Future Play",
         "imagen": "./images/botines/FuturePlay.webp",
         "categoria": {
@@ -23,7 +23,7 @@
     },
     {
         "id": "botin03",
-        "marca": "'Puma",
+        "marca":"Puma",
         "modelo": "Future Z",
         "imagen": "./images/botines/FutureZ4.3.webp",
         "categoria": {
@@ -34,7 +34,7 @@
     },
     {
         "id": "botin04",
-        "marca": "'Puma",
+        "marca":"Puma",
         "modelo": "UltraMatch",
         "imagen": "./images/botines/UltraMatch.webp",
         "categoria": {
@@ -232,7 +232,7 @@
     },
     {
         "id": "zapatilla10",
-        "marca": "'Puma"
+        "marca":"Puma",
         "modelo": "Retaliate",
         "imagen": "./images/zapatillas/Retaliate 2.jpeg",
         "categoria": {
@@ -254,7 +254,7 @@
     },
     {
         "id": "zapatilla12",
-        "marca": "'Puma",
+        "marca":"Puma",
         "modelo": "Cali Dream",
         "imagen": "./images/zapatillas/Cali Dream lt.jpeg",
         "categoria": {
