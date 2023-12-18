@@ -13,12 +13,14 @@ const contenedorTotal = document.querySelector('#total')
 function cargarProductosCarrito() {
 
     if (productosEnCarrito && productosEnCarrito.length > 0 ) {
-
+    
         contenedorCarritoVacio.classList.add('disabled');
         contenedorCarritoProductos.classList.remove('disabled');
         contenedorCarritoAcciones.classList.remove('disabled');
         contenedorCarritoComprado.classList.add('disabled');
-    
+        
+        contenedorCarritoProductos.innerHTML = "";
+        
         productosEnCarrito.forEach(producto => {
             const div = document.createElement('div');
             div.classList.add('carrito-producto')
@@ -46,10 +48,11 @@ function cargarProductosCarrito() {
             </div>
             <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
             `;
-    
             contenedorCarritoProductos.append(div);    
         });
-    
+
+        actualizarBotonesEliminar();
+        actualizarTotal(); 
     
     } else {
     
@@ -59,8 +62,7 @@ function cargarProductosCarrito() {
         contenedorCarritoComprado.classList.add('disabled');
     
     }
-    actualizarBotonesEliminar();
-    actualizarTotal(); 
+    
 }
 
 cargarProductosCarrito()
@@ -92,15 +94,16 @@ function eliminarDelCarrito(e) {
         offset: {
             x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
             y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
-          },
+        },
         
         onClick: function(){} // Callback after click
     }).showToast();
-    
+
     const idBoton = e.currentTarget.id
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+
     productosEnCarrito.splice(index, 1);
-    cargarProductosCarrito()
+    cargarProductosCarrito();
 
 localStorage.setItem('productos-en-carrito' , JSON.stringify(productosEnCarrito));
 };
