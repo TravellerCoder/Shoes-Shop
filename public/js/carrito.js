@@ -116,7 +116,7 @@ function vaciarCarrito() {
         
         confirmButtonText: "Vaciar",
         denyButtonText: `Cancelar`
-      }).then((result) => {
+        }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;
@@ -125,8 +125,8 @@ function vaciarCarrito() {
         } else if (result.isDenied) {
         
         }
-      });
-   
+    });
+
 };
 
 function actualizarTotal() {
@@ -136,13 +136,30 @@ function actualizarTotal() {
 
 botonComprar.addEventListener('click', comprarCarrito)
 function comprarCarrito() {
-    productosEnCarrito.length = 0;
-    localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
+    Swal.fire({
+        title: "Comprar productos en carrito?",
+        showDenyButton: true,
+        
+        confirmButtonText: "Comprar",
+        denyButtonText: `Cancelar`
+        }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            productosEnCarrito.length = 0;
+            localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
+            cargarProductosCarrito();
 
-    contenedorCarritoVacio.classList.add('disabled');
-    contenedorCarritoProductos.classList.add('disabled');
-    contenedorCarritoAcciones.classList.add('disabled');
-    contenedorCarritoComprado.classList.remove('disabled');
+            contenedorCarritoVacio.classList.add('disabled');
+            contenedorCarritoProductos.classList.add('disabled');
+            contenedorCarritoAcciones.classList.add('disabled');
+            contenedorCarritoComprado.classList.remove('disabled');
+        } else if (result.isDenied) {
+        
+        }
+    });
+    
+
+   
 };
 
 /*<template id="my-template">
