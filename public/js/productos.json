@@ -3,7 +3,7 @@
         "id": "'botin01",
         "marca": "Puma",
         "modelo": "Borusia",
-        "imagen": "./images/botines/Borussia.webp",
+        "imagen": "./images/Botines/Borussia.webp",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -14,7 +14,7 @@
         "id": "botin02",
         "marca":"Puma",
         "modelo": "Future Play",
-        "imagen": "./images/botines/FuturePlay.webp",
+        "imagen": "./images/Botines/FuturePlay.webp",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -25,7 +25,7 @@
         "id": "botin03",
         "marca":"Puma",
         "modelo": "Future Z",
-        "imagen": "./images/botines/FutureZ4.3.webp",
+        "imagen": "./images/Botines/FutureZ4.3.webp",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -36,7 +36,7 @@
         "id": "botin04",
         "marca":"Puma",
         "modelo": "UltraMatch",
-        "imagen": "./images/botines/UltraMatch.webp",
+        "imagen": "./images/Botines/UltraMatch.webp",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -47,7 +47,7 @@
         "id": "botin05",
         "marca": "Adidas",
         "modelo": "Copa",
-        "imagen": "./images/botines/Copa 19.3.webp",
+        "imagen": "./images/Botines/Copa 19.3.webp",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -58,7 +58,7 @@
         "id": "botin06",
         "marca": "Adidas",
         "modelo": "Predator Acc",
-        "imagen": "./images/botines/Predator Accuracy.jpg",
+        "imagen": "./images/Botines/Predator Accuracy.jpg",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -69,7 +69,7 @@
         "id": "botin07",
         "marca": "Adidas",
         "modelo": "Predato Mutator",
-        "imagen": "./images/botines/Predator Mutator.jpeg",
+        "imagen": "./images/Botines/Predator Mutator.jpeg",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -80,7 +80,7 @@
         "id": "botin08",
         "marca": "Adidas",
         "modelo": "X SpeedPortal",
-        "imagen": "./images/botines/X SpeedPortal.jpeg",
+        "imagen": "./images/Botines/X SpeedPortal.jpeg",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -91,7 +91,7 @@
         "id": "botin09",
         "marca": "Nike",
         "modelo": "Legend 8",
-        "imagen": "./images/botines/Legend8.webp",
+        "imagen": "./images/Botines/Legend8.webp",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -102,7 +102,7 @@
         "id": "botin10",
         "marca": "Nike",
         "modelo": "Mercurial Super",
-        "imagen": "./images/botines/Mercurial Superfly.jpeg",
+        "imagen": "./images/Botines/Mercurial Superfly.jpeg",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -113,7 +113,7 @@
         "id": "botin11",
         "marca": "Nike",
         "modelo": "Phantom Vision",
-        "imagen": "./images/botines/Phantom Vision Pro.jpeg",
+        "imagen": "./images/Botines/Phantom Vision Pro.jpeg",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
@@ -124,7 +124,7 @@
         "id": "botin12",
         "marca": "Nike",
         "modelo": "Zoom Vapor",
-        "imagen": "./images/botines/Zoom Vapor.jpg",
+        "imagen": "./images/Botines/Zoom Vapor.jpg",
         "categoria": {
             "id": "botines",
             "nombre": "Botines"
