@@ -89,7 +89,7 @@ function agregarAlCarrito(e) {
         style: {
             background: "linear-gradient(to right, #4b33a8, #2b06af)",
             borderRadius: "1.5rem",
-            fontSize: ".75rem",
+            fontSize: ".50rem",
             textTransform: "uppercase"
         },
         offset: {

@@ -295,7 +295,7 @@ main {
     display: none;
 }
 
-/** MEDIA QUERYS **/ 
+/** MEDIA QUERIES **/ 
 
 @media screen and (max-width: 750px) {
     .wrapper {
@@ -325,6 +325,7 @@ main {
 
     main {
         margin: 1rem;
+        margin-top: 0;
         padding: 2rem;
     }
 
@@ -338,7 +339,7 @@ main {
     }
 
     .header-mobile {
-        padding: rem;
+        padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -351,10 +352,11 @@ main {
 
     .open-menu, .close-menu {
         background-color: transparent;
-        color: var(--clr-white);
+        color: var(--clr-gray);
         border: 0;
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin: 1rem;
+        
     }
 
     .close-menu {
@@ -364,7 +366,17 @@ main {
         display: block;
     }
 
+    .carrito-producto {
+        flex-direction: column;
+        align-items:flex-start ;
+        gap: 1 rem;
+    }
+
     .carrito-producto-subtotal {
         display: none;
+    }
+
+    .carrito-accion {
+        flex-direction: column;
     }
 }
