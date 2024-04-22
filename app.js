@@ -5,7 +5,7 @@ const app = express();
 const publicPaht= path.resolve(__dirname, './public') ;
 app.use(express.static(publicPaht));
 //const port = process.env.PORT || 3000;
-const port = 3000
+const port = 3000;
 app.listen(port, (error) => {
     if(error) {
         return console.log(error)
@@ -22,3 +22,7 @@ app.get('/', function(req,res){
 app.get('/carrito', function(req,res){
     res.sendFile(path.resolve(__dirname, './src/carrito.html'))
 });
+
+app.get('/orden-de-pago', function(req,res){ 
+    res.sendFile(path.resolve(__dirname, './src/orden.html'))
+});   

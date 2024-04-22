@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
     </head>
 <body>
     <div class="wrapper">
@@ -53,8 +54,9 @@
                             <p>Total:</p>
                             <p id="total">$ </p>
                         </div>
-                        <button id="carrito-accion-comprar" class="carrito-accion-comprar">Comprar ahora</button>
+                        <a href="./orden-de-pago" id="carrito-accion-comprar" class="carrito-accion-comprar">Comprar ahora</a>
                     </div>
+                    <div id="wallet_container"></div>
                 </div>
 
                 <p id="carrito-comprado" class="carrito-compra-final disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>

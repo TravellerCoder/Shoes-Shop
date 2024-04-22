@@ -134,7 +134,7 @@ function actualizarTotal() {
     total.innerText = `$${totalCalculado}`
 };
 
-botonComprar.addEventListener('click', comprarCarrito)
+/*botonComprar.addEventListener('click', comprarCarrito)
 function comprarCarrito() {
     Swal.fire({
         title: "Comprar productos en carrito?",
@@ -143,7 +143,7 @@ function comprarCarrito() {
         confirmButtonText: "Comprar",
         denyButtonText: `Cancelar`
         }).then((result) => {
-        /* Read more about isConfirmed, isDenied below */
+        
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;
             localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
@@ -160,24 +160,5 @@ function comprarCarrito() {
     
 
    
-};
+};*/
 
-/*<template id="my-template">
-    <swal-title>
-        Vaciar carrito?
-    </swal-title>
-    <swal-icon type="warning" color="red"></swal-icon>
-    <swal-button type="confirm">
-        Vaciar
-    </swal-button>
-    <swal-button type="cancel">
-        Cancel
-    </swal-button>
-    <swal-param name="allowEscapeKey" value="false" />
-    <swal-param
-        name="customClass"
-        value='{ "popup": "my-popup" }' />
-    <swal-function-param
-        name="didOpen"
-        value="popup => console.log(popup)" />
-</template>*/
